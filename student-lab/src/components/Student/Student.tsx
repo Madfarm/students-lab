@@ -1,4 +1,5 @@
 import './Student.css'
+import Score from './Score/Score'
 
 type StudentProp = {
     name: string,
@@ -13,7 +14,8 @@ export default function Student(student:StudentProp){
     return (
         <div className="Student">
             <h3>{student.name}</h3>
-            <p></p>
+            <p>{student.bio}</p>
+            <Score />
         </div>
     )
 }
