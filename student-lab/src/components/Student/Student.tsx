@@ -15,7 +15,7 @@ export default function Student(student:StudentProp){
         <div className="Student">
             <h3>{student.name}</h3>
             <p>{student.bio}</p>
-            <Score />
+            <Score {...student.scores}/>
         </div>
     )
 }
