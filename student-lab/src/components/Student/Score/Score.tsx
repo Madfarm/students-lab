@@ -1,4 +1,6 @@
 
+import './Score.css'
+
 type ScoresProp = {
     date: string,
     score: number,
