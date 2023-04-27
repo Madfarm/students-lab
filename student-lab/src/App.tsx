@@ -1,5 +1,9 @@
 import './App.css';
 import { useState } from 'react';
+import Student from './components/Student/Student';
+
+
+
 
 function App() {
   const [students, setStudents] = useState([
@@ -63,9 +67,13 @@ function App() {
     }
   ])
 
+  const studentMap = students.map((student) => 
+    <Student {...student} />
+  )
+
   return (
     <div className="App">
-      <h1>Anthony</h1>
+      {studentMap}
     </div>
   );
 }
